@@ -5,26 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Thai Restaurant Menu</title>
 
-    <!-- Tailwind -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- React 18 -->
+    <!-- React и ReactDOM -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
     <!-- Babel для JSX -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
-  <body class="bg-gray-50 text-gray-900">
-    <div id="root"></div>
 
-    <!-- Подключаем твой компонент -->
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Контейнер, в который React отрендерит приложение -->
+    <div id="root" class="p-4"></div>
+
+    <!-- Подключаем твой React-компонент -->
     <script type="text/babel" src="./siam_taste_thai_restaurant_menu_react_tailwind.jsx"></script>
 
-    <!-- Рендер главного компонента -->
+    <!-- Рендер основного компонента (App) -->
     <script type="text/babel">
       const root = ReactDOM.createRoot(document.getElementById('root'));
-      root.render(<App />);
+      root.render(<App />); // Если главный компонент имеет другое имя — поменяй здесь
     </script>
   </body>
 </html>
